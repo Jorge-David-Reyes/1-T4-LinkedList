@@ -1,32 +1,44 @@
 package uaslp.ingenieria.labs.list;
 
-public class Node {
+class Node {
+    private int data;
+    private Node previous;
+    private Node next;
 
-    private int dato;
-    private Node sig;
-    private Node ant;
-
-    public int getDato() {
-        return dato;
+    Node(int data){
+        this.data = data;
     }
 
-    public void setDato(int dato) {
-        this.dato = dato;
+    public int getData() {
+        return data;
     }
 
-    public Node getSig() {
-        return sig;
+    public void setData(int data) {
+        this.data = data;
     }
 
-    public void setSig(Node sig) {
-        this.sig = sig;
+    public Node getPrevious() {
+        return previous;
     }
 
-    public Node getAnt() {
-        return ant;
+    public void setPrevious(Node previous) {
+        this.previous = previous;
     }
 
-    public void setAnt(Node ant) {
-        this.ant = ant;
+    public Node getNext() {
+        return next;
+    }
+
+    public void setNext(Node next) {
+        this.next = next;
+    }
+
+
+    public Node getBack() {
+        return previous;
+    }
+
+    public void setBack(Node previous) {
+        this.previous = previous;
     }
 }
